@@ -9,4 +9,6 @@
 # Contributors:
 #   Red Hat, Inc. - initial API and implementation
 #
-
+spec:
+  networking:
+    hostname: eclipse-che-test.com
