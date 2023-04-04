@@ -9,6 +9,23 @@
 # Contributors:
 #   Red Hat, Inc. - initial API and implementation
 #
-spec:
-  networking:
-    hostname: eclipse-che-test.com
+cheDevfileRegistryImage: quay.io/eclipse/che-devfile-registry:next
+cheDevfileRegistryImagePullPolicy: Always
+cheDevfileRegistryMemoryLimit: 256Mi
+cheDevfileRegistryIngressSecretName: che-tls
+#hostnameOverride: che-devfile-registry
+
+cheDevfileImagesOverride:
+  # Override for registry URL in images used in devfiles
+  # url:
+  # Override for registry organization in images used in devfiles
+  # organization: ""
+  # Override for image tags used images referenced in devfiles
+  # tag: ""
+
+affinity: {}
+
+global:
+  ingressDomain: 192.168.99.100.nip.io
+  ingress:
+    class: 'nginx'
