@@ -9,9 +9,9 @@
 # Contributors:
 #   Red Hat, Inc. - initial API and implementation
 #
-cheDevfileRegistryImage: quay.io/eclipse/che-devfile-registry:next
+cheDevfileRegistryImage: quay.io/eclipse/che-devfile-registry:7.63.0
 cheDevfileRegistryImagePullPolicy: Always
-cheDevfileRegistryMemoryLimit: 256Mi
+cheDevfileRegistryMemoryLimit: 500Mi
 cheDevfileRegistryIngressSecretName: che-tls
 #hostnameOverride: che-devfile-registry
 
